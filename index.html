@@ -4,66 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre Lopes</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Caminho relativo -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../IG/Imagem/6.jpg);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;  /* Limita a largura máxima para que o conteúdo não se espalhe muito em telas grandes */
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;  /* Ajusta a distribuição dos itens do menu */
+            list-style-type: none;
+            align-items: center;
+            padding: 16px;
+        }
+
+        li:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a.portifolio, a.projetos, a.contato {
+            width: auto;
+            height: 50px;
+            padding: 2px 20px;
+            font-size: 1.5rem;
+            background: #00ff08d3;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 10px #00ff08d3;
+        }
+
+        h1 {
+            color: #00ff08d3;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #00ff08d3;
+        }
+
+        .foto {
+            text-align: center;
+            margin: 0 auto;  /* Centraliza a imagem */
+            cursor: pointer;
+        }
+
+        .foto img:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            margin: 20px;
+        }
+
+        footer p {
+            margin: 2px;
+        }
+
+        footer .d {
+            width: 40px;
+            height: 40px;
+            margin: 1.8px;
+        }
+
+        footer .e {
+            width: 45px;
+            height: 45px;
+            margin: -0px -10px;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .a, .b, .f, .d, .e {
+            width: 40px;
+            height: 40px;
+            margin: 2px 5px;
+        }
+
+        .a img, .b img, .f img, .d img, .e img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-    <nav>
-        <ul>
-            <li><a class="portifolio" href="./portifolio.html">Portifólio</a></li>
-            <li><a class="projetos" href="./index.html">Projetos</a></li>
-            <li><a class="contato" href="./Contato.html">Contato</a></li>
-        </ul>
-    </nav>
-    <main class="container">
-        <header>
-        <div class="foto">
-            <img src="./IMG/Imagem/1.jpg" alt="Alexandre Lopes" title="Alexandre Lopes">
-        </div>
-        <h1>Alexandre Lopes</h1>
-        <h2>Desenvolvedor de Software</h2>
+        <nav>
+            <ul>
+                <li><a class="portifolio" href="portifolio.html">Portifólio</a></li>
+                <li><a class="projetos" href="index.html">Projetos</a></li>
+                <li><a class="contato" href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <header>
+                <div class="foto">
+                    <img src="IMG/Imagem/1.jpg" alt="Alexandre Lopes" title="Alexandre Lopes">
+                </div>
+                <h1>Alexandre Lopes</h1>
+                <h2>Desenvolvedor de Software</h2>
+                <hr>
+            </header>
+            <section>
+                <h3>Sobre mim</h3>
+                <p>Sou uma pessoa extrovertida e social, o que me permite me conectar facilmente com colegas e clientes. Meu entusiasmo e energia contagiante criam um ambiente de trabalho positivo e colaborativo. Possuo excelentes habilidades de trabalho em equipe. Valorizo a colaboração e acredito que ideias diversas e o trabalho conjunto levam a soluções inovadoras e eficazes. Tenho facilidade para me adaptar a diferentes estilos de comunicação e trabalho, garantindo que os objetivos do time sejam alcançados de maneira harmoniosa.</p>
+            </section><br>
+            <section>
+                <h3>Formação</h3>
+                <p>Experiência Profissional: Atualmente, trabalho com desenvolvimento front-end, utilizando JavaScript e outras linguagens de programação. Possuo sólida experiência em criação de interfaces de usuário intuitivas e responsivas, focadas em proporcionar a melhor experiência possível para os usuários finais.</p>
+            </section><br>
+            <section>
+                <h3>Cursos</h3>
+                <p><strong>Faculdade Estácio:</strong><br> Graduação em Análise e Desenvolvimento de Sistemas</p>
+                <p><strong>Udemy:</strong><br> Web Frontend Completo: HTML, CSS, JS, TS, React e Next 2025</p>
+                <p><strong>Escola Técnica LeiauT Carriere:</strong><br> Análise de Sistemas</p>
+            </section>
+        </main>
         <hr>
-    </header>
-        <section>
-            <h3>Sobre mim</h3>
-            <p>Sou uma pessoa extrovertida e social, o que me permite me conectar facilmente com colegas e clientes. Meu entusiasmo e energia contagiante criam um ambiente de trabalho positivo e colaborativo. Possuo excelentes habilidades de trabalho em equipe. Valorizo a colaboração e acredito que ideias diversas e o trabalho conjunto levam a soluções inovadoras e eficazes. Tenho facilidade para me adaptar a diferentes estilos de comunicação e trabalho, garantindo que os objetivos do time sejam alcançados de maneira harmoniosa.</p>
-        </section><br>
-        <section>
-            <h3>Formação</h3>
-            <p>Experiência Profissional: Atualmente, trabalho com desenvolvimento front-end, utilizando JavaScript e outras linguagens de programação. Possuo sólida experiência em criação de interfaces de usuário intuitivas e responsivas, focadas em proporcionar a melhor experiência possível para os usuários finais.</p>
-        </section><br>
-        <section>
-            <h3>Cursos</h3>
-            <p>
-                <strong>Faculdade Estácio:</strong><br> Graduação em Análise e Desenvolvimento de Sistemas</p>
-                <b><u></u>Udemy:</b><br> Web Frontend Completo: HTML, CSS, JS, TS, React e Next 2025</p>
-                <b>Escola Técnica LeiauT Carriere:</b><br>Análise de Sistemas
-            </p>
-        </section>
-    </main>
-    <hr>
-    <footer>
-        <a href="https://github.com/ALEXANDRELOPES-DEV" target="_blank" rel="noopener noreferrer">
-            <img class="a" src="./IMG/SVG/icons8-github.svg" alt="github">
-            <p>Github</p>
-        </a>
-        <a href="https://www.linkedin.com/in/alexandre-santos-26971b2bb/" target="_blank" rel="noopener noreferrer">
-            <img class="b" src="./IMG/SVG/icons8-linkedin.svg" alt="Linkdin">
-            <p>Linkdin</p>
-        </a>
-        <a href="https://www.youtube.com/@alexandrelopes7992" target="_blank" rel="noopener noreferrer">
-            <img class="f" src="./IMG/SVG/icons8-youtube.svg" alt="Youtube">
-            <p>Youtube</p>
-        </a>
-        <a href="https://www.instagram.com/alexandrelopes.info/" target="_blank" rel="noopener noreferrer">
-            <img class="d" src="./IMG/SVG/icons8-instagram.svg" alt="Instagram">
-            <p>Instagram</p>
-        </a>
-        <a href="https://x.com/alexlopes1985" target="_blank" rel="noopener noreferrer">
-            <img class="e" src="./IMG/SVG/icons8-twitter.svg" alt="X">
-            <p>X</p>
-        </a>
-    </footer>
+        <footer>
+            <a href="https://github.com/ALEXANDRELOPES-DEV" target="_blank" rel="noopener noreferrer">
+                <img src="IMG/SVG/icons8-github.svg" alt="GitHub">
+                <p>GitHub</p>
+            </a>
+            <a href="https://www.linkedin.com/in/alexandre-santos-26971b2bb/" target="_blank" rel="noopener noreferrer">
+                <img src="IMG/SVG/icons8-linkedin.svg" alt="LinkedIn">
+                <p>LinkedIn</p>
+            </a>
+            <a href="https://www.youtube.com/@alexandrelopes7992" target="_blank" rel="noopener noreferrer">
+                <img src="IMG/SVG/icons8-youtube.svg" alt="YouTube">
+                <p>YouTube</p>
+            </a>
+            <a href="https://www.instagram.com/alexandrelopes.info/" target="_blank" rel="noopener noreferrer">
+                <img src="IMG/SVG/icons8-instagram.svg" alt="Instagram">
+                <p>Instagram</p>
+            </a>
+            <a href="https://x.com/alexlopes1985" target="_blank" rel="noopener noreferrer">
+                <img src="IMG/SVG/icons8-twitter.svg" alt="X">
+                <p>X</p>
+            </a>
+        </footer>
     </div>
 </body>
 </html>
